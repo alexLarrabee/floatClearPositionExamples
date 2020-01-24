@@ -1,0 +1,78 @@
+body {
+  box-sizing: border-box;
+}
+
+p {
+  color: red;
+}
+
+section p {
+  display: inline;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+section img {
+  display: block;
+}
+
+div {
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+/* #theDivs {
+  display: flex;
+  justify-content: center;
+} */
+
+#theDivs div {
+  display: inline-block;
+}
+
+#relativeBox div {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+#relativeBox div p {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+}
+
+#fixedBox div {
+  position: fixed;
+  top: 50px;
+  left: 500px;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+#floatMe p {
+  display: block;
+  margin-left: 10px;
+  clear: left;
+}
+
+#floatMe img {
+  float: left;
+}
+
+.wolfImg {
+  margin-right: 10px;
+}
